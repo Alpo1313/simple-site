@@ -79,8 +79,7 @@ a {
   gap: 43px;
 }
 
-.navbar__item {
-}
+.navbar__item {}
 
 .navbar__link {
   display: block;
@@ -104,7 +103,7 @@ a {
 
 .content__title {
   color: var(--color-black);
-  font-size: 3rm;
+  font-size: 3rem;
   font-weight: 500;
   line-height: var(--line-height-lg);
   margin: 0 0 4px;
@@ -175,13 +174,14 @@ a {
 }
 
 .experience-item__number {
-  font-size: 1.3125rem; /* 21px*/
+  font-size: 1.3125rem;
+  /* 21px*/
   font-weight: 500;
 }
 
 .experience-item__text {
   /* ! Видаляєто бо заважає PixelPerfect */
-/* line-height: var(--line-height-lg); */
+  /* line-height: var(--line-height-lg); */
 }
 
 .experience-item__image {
@@ -195,8 +195,7 @@ a {
   padding-bottom: 100px;
 }
 
-.video__title {
-}
+.video__title {}
 
 .video__iframe {
   width: 100%;
@@ -208,16 +207,20 @@ a {
 
 .footer {
   background-color: var(--color-primary);
-  padding: 40px 0;
+  padding: 49px 0;
+  height: 151px;
   color: var(--color-white);
 }
 
 .footer__name {
-  font-size: 1.3125rem; /* 21px*/
+  font-size: 1.3125rem;
+  /* 21px*/
   font-weight: 500;
+  margin-bottom: 12px;
 }
 
 .footer__copyright {
-font-size: 0.8125rem; /* 13px*/
-line-height: var(--line-height-lg);
+  font-size: 0.8125rem;
+  /* 13px*/
+  line-height: var(--line-height-lg);
 }
