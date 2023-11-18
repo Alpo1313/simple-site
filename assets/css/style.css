@@ -1,0 +1,223 @@
+:root {
+  --color-black: #000000;
+  --color-primary: #34547a;
+  --color-secondaty: #727272;
+  --color-gray-light: #eeeff1;
+  --color-light: #f9f9f9;
+  --color-white: #ffffff;
+  --color-accent: #34547A;
+
+  --font-size: 16px;
+  --font-family: 'Roboto', sans-serif;
+
+  --line-height-normal: 1.2;
+  --line-height-lg: 1.64;
+  --letter-spacing: 0.1em;
+
+  --container-primary: 1110px;
+  --container-sm: 540px;
+  --gap: 20px;
+  --gap-sm: calc(var(--gap) / 2);
+  --gap-lg: calc(var(--gap) * 2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: var(--line-height-normal);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - var(--gap-lg), var(--container-primary));
+  margin-inline: auto;
+}
+
+.contaiter--sm {
+  width: min(100% - var(--gap-lg), var(--container-sm));
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+
+.header {
+  padding-top: 66px;
+  padding-bottom: 100px;
+  background-color: var(--color-gray-light);
+  min-height: 700px;
+}
+
+.navbar {
+  margin-bottom: 134px;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 43px;
+}
+
+.navbar__item {
+}
+
+.navbar__link {
+  display: block;
+  color: var(--color-black);
+  line-height: var(--line-height-lg);
+  letter-spacing: var(--letter-spacing);
+  padding: var(--gap-sm) 0;
+}
+
+.navbar__link:hover {
+  color: var(--color-accent);
+}
+
+.contetn {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.content__title {
+  color: var(--color-black);
+  font-size: 3rm;
+  font-weight: 500;
+  line-height: var(--line-height-lg);
+  margin: 0 0 4px;
+}
+
+.content__description {
+  color: var(--color-secondaty);
+  line-height: var(--line-height-lg);
+  margin-bottom: 26px;
+}
+
+.content__link {
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--color-primary);
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 225px;
+  min-height: 65px;
+}
+
+.section {
+  padding-top: 112px;
+  padding-bottom: 90px;
+  background-color: var(--color-light);
+}
+
+.section__title {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: var(--line-height-normal);
+  margin-bottom: 39px;
+}
+
+.section__description {
+  color: var(--color-secondaty);
+  text-align: center;
+  line-height: var(--line-height-lg);
+}
+
+/* Experions */
+.experience {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 100px 0 88px;
+}
+
+.experience__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.experience-item {
+  display: flex;
+  gap: var(--gap);
+}
+
+.experience-item__description {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.experience-item__number {
+  font-size: 1.3125rem; /* 21px*/
+  font-weight: 500;
+}
+
+.experience-item__text {
+  /* ! Видаляєто бо заважає PixelPerfect */
+/* line-height: var(--line-height-lg); */
+}
+
+.experience-item__image {
+  order: -1;
+}
+
+/* Video */
+
+.video {
+  background-color: var(--color-gray-light);
+  padding-bottom: 100px;
+}
+
+.video__title {
+}
+
+.video__iframe {
+  width: 100%;
+  height: 600px;
+  border: 0;
+}
+
+/* Fooder */
+
+.footer {
+  background-color: var(--color-primary);
+  padding: 40px 0;
+  color: var(--color-white);
+}
+
+.footer__name {
+  font-size: 1.3125rem; /* 21px*/
+  font-weight: 500;
+}
+
+.footer__copyright {
+font-size: 0.8125rem; /* 13px*/
+line-height: var(--line-height-lg);
+}
