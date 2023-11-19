@@ -93,7 +93,7 @@ a {
   color: var(--color-accent);
 }
 
-.contetn {
+.content {
   max-width: 540px;
   display: flex;
   flex-direction: column;
@@ -191,11 +191,9 @@ a {
 /* Video */
 
 .video {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-light);
   padding-bottom: 100px;
 }
-
-.video__title {}
 
 .video__iframe {
   width: 100%;
